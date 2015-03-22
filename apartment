@@ -1,0 +1,24 @@
+#ifndef __Apartment_H
+#define __Apartment_H
+//#pragma once
+class Apartment {  // класс квартир  используется для создания объектов типа квартира для хранения информации о конкретной квартире для взимания квартплаты: номер квартиры, число жителей квартиры, площадь квартиры, размер платежа.
+public:
+Apartment();               // Создание квартиры без параметров
+Apartment(int NumApartment,int CountPeopleApartment, float AreaApartment, float PayApartment); //Номер квартиры
+~Apartment();             //Удаление квартиры
+int getNumApartment();   //Получить номер квартиры
+int getCountPeopleApartment();// Получить число жителей квартиры
+float getAreaApartment();// const {return AreaApartment;}      //Получить площадь квартиры
+float getPayApartment();// const {return PayApartment;}    //Получить размер квартплаты
+void setNumApartment(int NumApartment);//;{this -> NumApartment = NumApartment;}      //Изменить номер квартиры
+void setCountPeopleApartment(int CountPeopleApartment);// {this -> CountPeopleApartment= CountPeopleApartment; }// Изменить число жителей квартиры
+void setAreaApartment(float AreaApartment);//{this -> AreaApartment = AreaApartment;}//Изменить площадь квартиры
+void setPayApartment(float PayApartment);//{this -> PayApartment = PayApartment;}  // Установить размер квартплаты
+//void operator +();//прототип метода класса в котором мы перегрузим оператор +
+int NumApartment;   // Номер квартиры
+int CountPeopleApartment; //Число жителей квартиры
+float AreaApartment;      // Площадь квартиры
+float PayApartment;      // Размер квартплаты
+};
+#endif
+
